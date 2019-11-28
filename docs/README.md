@@ -9,7 +9,7 @@ Based on <a href="https://github.com/kamranahmedse/design-patterns-for-humans">"
 </p>
 
 
-
+##LIVE URL: https://syedsimanta03.github.io/JavaScript-Dessign-Pattern
 
 
 
