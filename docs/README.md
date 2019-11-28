@@ -1,8 +1,6 @@
-![Design Patterns For Humans](./cover.png)
-
 ***
 <p align="center">
-🎉 Ultra-simplified explanation to design patterns! 🎉
+🎉 JavaScript Design Patterns For Human! 🎉
 </p>
 <p align="center">
 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible. 
@@ -12,13 +10,13 @@ Based on <a href="https://github.com/kamranahmedse/design-patterns-for-humans">"
 
 
 
-[TOC]
+
 
 
 
 ***
 
-🚀 Introduction
+ Introduction
 =================
 
 Design patterns are solutions to recurring problems **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations. 
@@ -43,8 +41,7 @@ Wikipedia describes them as
 - All design patterns have been implemented in [ES6](https://github.com/lukehoban/es6features), the new version of javascript.
 - Since javascript does not have any implementation of interfaces, the examples here use implied interfaces, which means that as long as a class has attributes and methods that a particular interface is supposed to have, it is considered to implement that interface. To make it easier to tell the interface we are using, its information can be found in the comments of every example.
 
-Types of Design Patterns
------------------
+**Types of Design Patterns**
 
 * [Creational](#creational-design-patterns)
 * [Structural](#structural-design-patterns)
@@ -1868,7 +1865,7 @@ iosBuilder.build()
 
 ## 🚦 Wrap Up Folks
 
-And that about wraps it up. I will continue to improve this, so you might want to watch/star this repository to revisit. Also, I have plans on writing the same about the architectural patterns, stay tuned for it.
+And that about wraps it up. I will continue to improve this, so you might want to watch/star this repository to revisit. 
 
 ## 👬 Contribution
 
@@ -1876,6 +1873,4 @@ And that about wraps it up. I will continue to improve this, so you might want t
 - Open pull request with improvements
 - Spread the word
 
-## License
-MIT © [Soham Kamani](http://sohamkamani.com)
-Based on ["Design patterns for humans"](https://github.com/kamranahmedse/design-patterns-for-humans) Copyright 2017 Kamran Ahmed
+Based on ["Design patterns for humans"](https://github.com/kamranahmedse/design-patterns-for-humans)
