@@ -5,12 +5,16 @@
 <p align="center">
 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible. 
 <br/>
-Based on <a href="https://github.com/kamranahmedse/design-patterns-for-humans">"Design patterns for humans"</a>
+    Based on <a href="https://github.com/kamranahmedse/design-patterns-for-humans">"Design patterns for humans"</a> 
 </p>
 
 
-##LIVE URL: https://syedsimanta03.github.io/JavaScript-Dessign-Pattern
 
+​                          
+
+<h3 align="center">
+     🔗 LIVE URL: <a href="https://syedsimanta03.github.io/JavaScript-Dessign-Pattern">"Design patterns by Simanta"</a> 
+</h3>
 
 
 
@@ -1340,7 +1344,7 @@ stationList.removeStation(new RadioStation(89)) // Will remove station 89
 ```
 
 👽 Mediator
-========
+--------
 
 Real world example
 > A general example would be when you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator. 
@@ -1863,11 +1867,11 @@ iosBuilder.build()
 // Deploying ios build to server
 ```
 
-## 🚦 Wrap Up Folks
+# Wrap Up Folks
 
 And that about wraps it up. I will continue to improve this, so you might want to watch/star this repository to revisit. 
 
-## 👬 Contribution
+# Contribution
 
 - Report issues
 - Open pull request with improvements
