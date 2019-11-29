@@ -1,109 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JavaScript-Dessign-Pattern</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript-Dessign-Pattern</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
 
-  <link id="styles" rel="stylesheet" href="Night.css">
+    <link id="styles" rel="stylesheet" href="Night.css" />
 
+    <style>
+      html,
+      body {
+        font-size: 1.1rem;
+      }
 
-<style>
-  html, body {
-    font-size: 1.1rem;
-  }
+      .btngroup {
+        font-size: 0;
+        line-height: 1;
+        white-space: nowrap;
+        display: inline;
+      }
+      .btngroup--btn {
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #ffffff29;
+        border: 1px solid #e4e4e4;
+        color: #bebebe;
+        border-left-width: 0;
+        display: inline-block;
+        padding: 0.5em 1.25em;
+        outline: 0;
+      }
+      .btngroup--btn:first-child {
+        border-left-width: 2px;
+        border-radius: 2em 0 0 2em;
+      }
+      .btngroup--btn:last-child {
+        border-radius: 0 2em 2em 0;
+      }
+      .btngroup--btn:link {
+        color: #bdc3c7;
+      }
+      .btngroup--btn:visted {
+        color: #bdc3c7;
+      }
+      .btngroup--btn:hover {
+        background: #34495e;
+        color: #fff;
+      }
+      .btngroup--btn:active {
+        background: #fff;
+        color: #34495e;
+      }
 
-  .btngroup {
-  font-size: 0;
-  line-height: 1;
-  white-space: nowrap;
-  display: inline;
-}
-.btngroup--btn {
-  font-size: .6rem;
-  letter-spacing: .1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #ffffff29;
-  border: 1px solid #e4e4e4;
-  color: #bebebe;
-  border-left-width: 0;
-  display: inline-block;
-  padding: .5em 1.25em;
-  outline: 0;
-}
-.btngroup--btn:first-child {
-  border-left-width: 2px;
-  border-radius: 2em 0 0 2em;
-}
-.btngroup--btn:last-child {
-  border-radius: 0 2em 2em 0;
-}
-.btngroup--btn:link {
-  color: #bdc3c7;
-}
-.btngroup--btn:visted {
-  color: #bdc3c7;
-}
-.btngroup--btn:hover {
-  background: #34495e;
-  color: #fff;
-}
-.btngroup--btn:active {
-  background: #fff;
-  color: #34495e;
-}
+      .blur {
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        -ms-filter: blur(50px);
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body id="blur">
+    <nav>
+      <span class="btngroup">
+        <button
+          class="btngroup--btn"
+          onclick="changeCSS('Day.css', 0); blurMe();"
+        >
+          Light
+        </button>
+        <button 
+          class="btngroup--btn"
+          onclick="changeCSS('Night.css', 0); blurMe();"
+        >
+          Dark
+        </button>
+      </span>
+    </nav>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: '🚀Syed Simanta',
+        loadNavbar: true,
 
-</style>
+        // docsify-copy-code (defaults)
+        copyCode: {
+          buttonText: 'Copy to clipboard',
+          errorText: 'Error',
+          successText: 'Copied'
+        }
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <!-- Latest v2.x.x -->
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
 
-</head>
-<body>
-  <nav>
-  <span class="btngroup">
-    <button class="btngroup--btn" onclick="changeCSS('Day.css', 0);">Light</button> 
-    <button class="btngroup--btn" onclick="changeCSS('Night.css', 0);">Dark</button> 
-  </span>
+    <script>
+      function changeCSS(cssFile, cssLinkIndex) {
+        var oldlink = document.getElementsByTagName('link').item(cssLinkIndex);
 
+        var newlink = document.createElement('link');
+        newlink.setAttribute('rel', 'stylesheet');
+        newlink.setAttribute('type', 'text/css');
+        newlink.setAttribute('href', cssFile);
 
-  </nav>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '🚀Syed Simanta',
-      repo: 'https://github.com/syedsimanta03/JavaScript-Dessign-Pattern',
-          loadNavbar: true,
+        document
+          .getElementsByTagName('head')
+          .item(0)
+          .replaceChild(newlink, oldlink);
+      }
 
-      // docsify-copy-code (defaults)
-  copyCode: {
-    buttonText : 'Copy to clipboard',
-    errorText  : 'Error',
-    successText: 'Copied'
-  }
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!-- Latest v2.x.x -->
-<script src="https://unpkg.com/docsify-copy-code@2"></script>
+      // PWA Register
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js');
+      }
 
+      function blurMe() {
+        var element = document.getElementById('blur');
+        element.classList.add('blur');
+        setTimeout(function() {
+          element.classList.remove('blur');
+        }, 3000);
+      }
 
-
-<script>
-function changeCSS(cssFile, cssLinkIndex) {
-
-    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-    var newlink = document.createElement("link");
-    newlink.setAttribute("rel", "stylesheet");
-    newlink.setAttribute("type", "text/css");
-    newlink.setAttribute("href", cssFile);
-
-    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-}
-</script>
-
-
-
-</body>
+    </script>
+  </body>
 </html>
