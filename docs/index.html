@@ -10,12 +10,15 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
 
-    <link id="styles" rel="stylesheet" href="Night.css" />
+    <link rel="stylesheet" href="Night.css" />
+
+    
 
     <style>
       html,
       body {
         font-size: 1.1rem;
+        scroll-behavior: smooth;
       }
 
       .btngroup {
@@ -69,6 +72,7 @@
       .hide {
         display: none;
       }
+
     </style>
   </head>
   <body id="blur">
@@ -114,6 +118,8 @@
         newlink.setAttribute('rel', 'stylesheet');
         newlink.setAttribute('type', 'text/css');
         newlink.setAttribute('href', cssFile);
+        newlink.setAttribute('media', 'none');
+        newlink.setAttribute('onload', "if(media!='all')media='all'");
 
         document
           .getElementsByTagName('head')
@@ -131,9 +137,12 @@
         element.classList.add('blur');
         setTimeout(function() {
           element.classList.remove('blur');
-        }, 3000);
+        }, 1000);
       }
 
+
     </script>
+
+
   </body>
 </html>
