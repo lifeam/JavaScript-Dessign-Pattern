@@ -16,7 +16,8 @@ A topic that can easily make anyone's mind wobble. Here I try to make them stick
      🔗 LIVE URL: <a href="https://syedsimanta03.github.io/JavaScript-Dessign-Pattern">"Design patterns by Simanta"</a> 
 </h3>
 
-
+>  I build my own online/local playground when learning new topic or language. There are tons of resources out there where you can learn the same topics described here. But if you are like me, want to learn in an organized or simplest way then this is good for you. 
+>
 
 ***
 
