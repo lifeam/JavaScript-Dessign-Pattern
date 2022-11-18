@@ -69,7 +69,7 @@ Wikipedia says
  * [Prototype](#-prototype)
  * [Singleton](#-singleton)
 
-🏠 Simple Factory
+🏠 Simple Factory *
 --------------
 Real world example
 > Consider, you are building a house and you need doors. It would be a mess if every time you need a door, you put on your carpenter clothes and start making a door in your house. Instead you get it made from a factory.
@@ -126,7 +126,7 @@ console.log('Height:', door.getHeight())
 
 When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere. 
 
-🏭 Factory Method
+🏭 Factory Method *
 --------------
 
 Real world example
@@ -201,7 +201,7 @@ marketingManager.takeInterview() // Output: Asking about community buildng.
 
 Useful when there is some generic processing in a class but the required sub-class is dynamically decided at runtime. Or putting it in other words, when the client doesn't know what exact sub-class it might need.
 
-🔨 Abstract Factory
+🔨 Abstract Factory *
 ----------------
 
 Real world example
